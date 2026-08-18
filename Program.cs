@@ -4,7 +4,7 @@ using System.Numerics;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-const string endPoint = "/kmc_08311_gmail_com";
+const string endPoint = "kmc08311_gmail_com";
 app.MapGet(endPoint, (string? x, string? y) =>
 {
     if ( !BigInteger.TryParse(x, out BigInteger bigX) || bigX <= 0 ||
